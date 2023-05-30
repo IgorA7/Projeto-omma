@@ -77,6 +77,7 @@ main section.banner h1 {
 main section.receitas-principais .container {
     min-height: 600px;
     width: 1200px;
+    max-width: 100%;
     /* largura */
     margin: 0 auto;
     /* espaçamento automatico para centralizar o container */
@@ -158,6 +159,7 @@ section.banner-secundario {
 section.banner-secundario .container {
     min-height: 600px;
     width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -177,6 +179,7 @@ section.banner-secundario .container p {
     font-size: 24px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 450px;
+    max-width: 100%;
 }
 
 footer {
@@ -188,6 +191,7 @@ footer {
 
 footer .container {
     width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
@@ -206,6 +210,7 @@ main section.todas-receitas .container {
     min-height: 600px;
     /* altura minima */
     width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 50px 0;
 }
@@ -220,6 +225,7 @@ main section.todas-receitas h2 {
 
 .container-receita-interna {
     width: 1200px;
+    max-width: 100%;
     margin: 50px auto;
     display: flex;
     justify-content: space-between;
@@ -228,10 +234,12 @@ main section.todas-receitas h2 {
 
 .container-receita-interna main {
     width: 700px;
+    max-width: 100%;
 }
 
 .container-receita-interna main img {
     width: 100%;
+    max-width: 100%;
 }
 
 small.tag {
@@ -262,6 +270,7 @@ aside article.receita-relacionada h3 {
     text-transform: lowercase;
     text-align: center;
 }
+
 /* Página Contato */
 
 .banner-contato {
@@ -283,6 +292,8 @@ aside article.receita-relacionada h3 {
 section.contato .container {
 
     width: 1000px;
+
+    max-width: 100%;
 
     margin: 0 auto;
 
@@ -386,7 +397,8 @@ section.contato .container {
 
     padding: 5px 15px;
 
-    border-radius: 30px; /*deixa o butão redondo*/
+    border-radius: 30px;
+    /*deixa o butão redondo*/
     transition: 0.5s;
 }
 
@@ -395,3 +407,44 @@ section.contato .container {
     border-color: green;
     cursor: pointer;
 }
+
+@media (max-width: 1100px) {
+
+    .container,
+    .container-receita-interna {
+        width: 900px !important;
+        max-width: 100% !important;
+    }
+}
+
+main section.banner .container {
+    justify-content: flex-start;
+}
+
+.lista-receitas article {
+    width: 250px;
+
+}
+
+.container-receita-interna main {
+    width: 500px;
+}
+
+.container-receita-interna main iframe {
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+
+    .container,
+    .container-receita-interna {
+        width: 800px !important;
+        padding: 0 20px;
+    }
+
+    .lista-receitas article {
+        padding: 10px;
+    }
+   
+}
+   
