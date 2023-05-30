@@ -412,7 +412,7 @@ section.contato .container {
 
     .container,
     .container-receita-interna {
-        width: 900px !important;
+        width: 800px !important;
         max-width: 100% !important;
     }
 }
@@ -434,7 +434,7 @@ main section.banner .container {
     width: 100%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
 
     .container,
     .container-receita-interna {
@@ -447,4 +447,13 @@ main section.banner .container {
     }
    
 }
+
+.banner-contato .container, section.contato .container {
+    width: 1300px;
+    padding: 0 30px;
+
+}
+
+
+
    
